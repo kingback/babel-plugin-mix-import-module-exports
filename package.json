@@ -1,0 +1,30 @@
+{
+  "name": "babel-plugin-mix-import-module-exports",
+  "version": "0.1.0",
+  "description": "Fix mixed use ES6 imports and Common.js exports",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:kingback/babel-plugin-mix-import-module-exports.git"
+  },
+  "keywords": [
+    "babel-plugin"
+  ],
+  "author": {
+    "name": "kingback",
+    "email": "ningzbruc@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kingback/babel-plugin-mix-import-module-exports/issues"
+  },
+  "homepage": "https://github.com/kingback/babel-plugin-mix-import-module-exports#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "jest": "^23.5.0"
+  }
+}

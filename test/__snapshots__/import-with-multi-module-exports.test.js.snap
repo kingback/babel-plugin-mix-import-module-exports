@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`import-with-multi-module-exports 1`] = `
+"var __MIX_IMPORT_MODULE_EXPORTS__;
+
+import { A } from 'a';
+import B from 'b';
+// ...
+if (B) {
+  __MIX_IMPORT_MODULE_EXPORTS__ = B;
+} else {
+  __MIX_IMPORT_MODULE_EXPORTS__ = A;
+}
+export default __MIX_IMPORT_MODULE_EXPORTS__;"
+`;
