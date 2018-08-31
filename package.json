@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-mix-import-module-exports",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fix mixed use ES6 imports and Common.js exports",
   "main": "index.js",
   "scripts": {

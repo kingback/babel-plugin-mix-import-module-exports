@@ -23,13 +23,15 @@ module.exports = function (babel) {
       },
       AssignmentExpression(path) {
         var left = path.node.left;
+        var leftPath = path.get('left');
 
         if (
+          moduleExportsPaths.indexOf(leftPath) < 0 &&
           left.type === 'MemberExpression' &&
           left.object.name === 'module' &&
           (left.property.name || left.property.value) === 'exports' // module.exports || module['exports']
         ) {
-          moduleExportsPaths.push(path.get('left'));
+          moduleExportsPaths.push(leftPath);
         }
       },
       ImportDeclaration() {
